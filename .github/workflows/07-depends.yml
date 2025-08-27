@@ -1,4 +1,4 @@
-name: Variables de Org
+name: Depends
 
 on: 
   workflow_dispatch
