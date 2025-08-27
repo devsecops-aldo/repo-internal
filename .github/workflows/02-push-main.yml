@@ -1,4 +1,4 @@
-name: Mi First Workflow
+name: On Push Main Workflow
 
 on: 
   push:
