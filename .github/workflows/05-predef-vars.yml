@@ -1,0 +1,17 @@
+name: Variables Predefinidas
+
+on: 
+  workflow_dispatch
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+      - name: Imprimir Message
+        run: |
+          echo "repo         = ${{ github.repository }}"
+          echo "actor        = ${{ github.actor }}"
+          echo "evento       = ${{ github.event_name }}"
+          echo "runner os    = ${{ runner.os }}"
